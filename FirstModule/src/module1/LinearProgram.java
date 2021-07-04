@@ -1,3 +1,5 @@
+package module1;
+
 import static java.lang.Math.*;
 
 public class LinearProgram {
@@ -15,7 +17,7 @@ public class LinearProgram {
 
     public static String fourthTask(double R){
         String[] number = String.valueOf(R).split("\\.");
-        return number[1] + number[0];
+        return number[1] + "." + number[0];
     }
 
     public static String fifthTask(int T){
@@ -26,8 +28,8 @@ public class LinearProgram {
         return hours + "ч " + minutes + "мин " + seconds + "c";
     }
 
-    /*public static sixthTask(){
+    public static void sixthTask(){
 
-    }*/
+    }
 }
 
