@@ -24,7 +24,7 @@ public class LinearProgram {
         double x = 2.7;
         double y = 3.6;
 
-        return (sin(x) + cos(y)) / (cos(x) - sin(y)) * log10(x * y);
+        return (sin(x) + cos(y)) / (cos(x) - sin(y)) * tan(x * y);
     }
 
     //change integer end decimal part
@@ -36,7 +36,7 @@ public class LinearProgram {
         return number[1] + "." + number[0];
     }
 
-    //seconds in hours, minutes and seconds
+    //convert seconds to hours, minutes and seconds
     public static String fifthTask() {
         int T = 33333;
         int hours = T / 3600;
@@ -46,8 +46,32 @@ public class LinearProgram {
         return hours + "ч " + minutes + "мин " + seconds + "c";
     }
 
-    public static void sixthTask() {
+    //check if point belongs to area
+    public static boolean sixthTask() {
 
+        final int POSITIVE_X = 2;
+        final int NEGATIVE_X = 4;
+        final int POSITIVE_Y = 4;
+        final int NEGATIVE_Y = -3;
+
+        int x = 2;
+        int y = 1;
+        boolean result = false;
+
+        if(y > 0 && y <= POSITIVE_Y){
+            if(abs(x) <= POSITIVE_X){
+                result = true;
+            }
+        }
+        else{
+            if(y <= 0 && y >= NEGATIVE_Y){
+                if(abs(x) <= NEGATIVE_X){
+                    result = true;
+                }
+            }
+        }
+
+        return result;
     }
 }
 
