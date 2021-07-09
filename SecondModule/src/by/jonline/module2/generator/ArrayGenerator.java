@@ -1,9 +1,5 @@
 package by.jonline.module2.generator;
 
-import by.jonline.module2.main.Main;
-
-import java.util.Random;
-
 public class ArrayGenerator {
     public static int[] generateIntArray(int length){
         int[] array = new int[length];
@@ -19,7 +15,7 @@ public class ArrayGenerator {
         double[] array = new double[length];
 
         for (int i = 0; i < length; i++) {
-            array[i] = Math.random() * 11 - 5;
+            array[i] = (double) Math.round((Math.random() * 11 - 5) * 100) / 100;
         }
 
         return array;

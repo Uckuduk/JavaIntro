@@ -143,6 +143,23 @@ public class FirstPart {
         return isSimple;
     }
 
+    public static double seventhTask(){
+        double[] array = ArrayGenerator.generateDoubleArray(2);
+        Output.outputArray(array);
+
+        double sum = array[0] + array[array.length - 1];
+
+        for (int i = 0; i < array.length/2; i++) {
+            double newSum = array[i] + array[array.length - 1 - i];
+
+            if(sum < newSum){
+                sum = newSum;
+            }
+        }
+
+        return sum;
+    }
+
     //delete all min elements
     public static void eightTask(){
         int[] array = ArrayGenerator.generateIntArray(10);

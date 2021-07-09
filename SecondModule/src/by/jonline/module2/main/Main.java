@@ -1,6 +1,8 @@
 package by.jonline.module2.main;
 
+import by.jonline.module2.controller.Output;
 import by.jonline.module2.generator.ArrayGenerator;
+import by.jonline.module2.generator.MatrixGenerator;
 
 public class Main {
 
@@ -22,6 +24,9 @@ public class Main {
         System.out.println("\n1.6) ");
         System.out.println(FirstPart.sixthTask());
 
+        System.out.println("\n1.7) ");
+        System.out.println(FirstPart.seventhTask());
+
         System.out.println("\n1.8) ");
         FirstPart.eightTask();
 
@@ -30,5 +35,8 @@ public class Main {
 
         System.out.println("\n1.10) ");
         FirstPart.tenthTask();
+
+        System.out.println("\n2.1) ");
+        SecondPart.firstTask();
     }
 }
